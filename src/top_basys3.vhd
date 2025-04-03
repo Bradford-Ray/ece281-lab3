@@ -118,7 +118,9 @@ begin
 	   i_left      => sw(15),
 	   i_reset     => btnR,
 	   i_clk       => w_slow_clock,
-	   o_lights_R(2 downto 0)  => led(0 downto 2),
+	   o_lights_R(0)   => led(2),
+	   o_lights_R(1)   => led(1),
+	   o_lights_R(2)   => led(0),
 	   o_lights_L(2 downto 0)  => led(15 downto 13)
 	   );
 	
